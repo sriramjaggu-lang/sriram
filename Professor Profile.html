@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/day2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            background: #f4f4f4;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .profile-image {
+            text-align: center;
+        }
+
+        .profile-image img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+
+        .profile-info p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .research-item, .skill-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .research-item h3, .skill-item h3 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-bar {
+            width: 70%;
+            height: 8px;
+            background: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .records {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .record-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .record-card h3 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-info h1 {
+                font-size: 1.8em;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .skill-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .skill-bar {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professor Profile</h1>
+        <p>Excellence in Education and Research</p>
+    </header>
+
+    <nav>
+        <a href="http://127.0.0.1:5500/day2/index.html#home">Home</a>
+        <a href="http://127.0.0.1:5500/day2/index.html#research">Research</a>
+        <a href="http://127.0.0.1:5500/day2/index.html#skills">Skills</a>
+        <a href="http://127.0.0.1:5500/day2/index.html#records">Records</a>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="profile-section">
+            <div class="profile-image">
+                <img src="./Professor Profile_files/profile.jpg" alt="Professor Profile">
+            </div>
+            <div class="profile-info">
+                <h1>J. Sriram</h1>
+                <p><strong>Department of Computer Science</strong></p>
+                <p>Dedicated educator with 15+ years of experience in university-level teaching and groundbreaking research initiatives.</p>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research Work</h2>
+            <div class="research-item">
+                <h3>Artificial Intelligence</h3>
+                <p>Leading a team of researchers on implementing machine learning algorithms for medical diagnosis and treatment prediction.</p>
+            </div>
+            <div class="research-item">
+                <h3>Cloud Computing Architecture</h3>
+                <p>Developing scalable distributed systems and exploring optimal cloud deployment strategies for enterprise applications.</p>
+            </div>
+            <div class="research-item">
+                <h3>Cybersecurity Frameworks</h3>
+                <p>Researching advanced security protocols and developing defensive mechanisms against emerging cyber threats.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <span>Programming Languages</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <span>Research &amp; Analysis</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <span>Teaching &amp; Mentoring</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <span>Academic Writing</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 88%;"></div></div>
+            </div>
+        </section>
+
+        <section id="records" class="section">
+            <h2>Academic Records</h2>
+            <div class="records">
+                <div class="record-card">
+                    <h3>47</h3>
+                    <p>Research Papers Published</p>
+                </div>
+                <div class="record-card">
+                    <h3>200+</h3>
+                    <p>Students Mentored</p>
+                </div>
+                <div class="record-card">
+                    <h3>15</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="record-card">
+                    <h3>12</h3>
+                    <p>Awards &amp; Recognition</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container" style="text-align: center; padding: 20px; background: #f9f9f9; border-radius: 8px; margin: 20px 0;">
+        <p><strong>Email:</strong>sriramjaggu@gmail.com</p>
+        <p><strong>Mobile:</strong> +919092196904</p>
+    </div>
+
+    <footer>
+        <p>© 2024 Professor Profile. All rights reserved.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
